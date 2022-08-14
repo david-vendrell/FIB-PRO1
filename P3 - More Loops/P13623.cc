@@ -1,0 +1,1 @@
+#include <iostream>using namespace std;int main() {    int f, c;    cin >> f >> c;    int blancas = 0;    char x;    for (int i = 0; i < f; ++i) {        for (int j = 0; j < c; ++j) {            cin >> x;            if ((i + j)%2 == 0) blancas += x - '0';        }    }    cout << blancas << endl;}
